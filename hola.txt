@@ -1,2 +1,64 @@
-hola mundo 1
-hola mundo 2 
+//======================================================================
+//  AREA de -> working directory
+
+git add .                               // se añade todos los archivos de la carpeta a la area de staging  
+git add ejemploArchivo.txt              //añade el archivo ejemploArchivo.txt a la area de staging  
+
+
+//======================================================================
+//  AREA de -> staging
+
+git diff                          // nos muestralas las partes modificadas de un arcvios modificados 
+git status                          // nos dice que archivos han sido moficados 
+
+git commit -m "<<Comentario del commit>>"
+
+//======================================================================
+//  AREA de -> remote repository
+
+git push
+
+//======================================================================
+// otros comandos
+//
+git clone
+git init .
+
+
+
+
+*****************************************************************************
+*****************************************************************************
+*****************************************************************************
+Estos son comandos Git comunes que se usan en diversas situaciones:
+
+iniciar un área de trabajo (ver también: tutorial de ayuda de git)
+   clone        Clonar un repositorio en un nuevo directorio
+   init         Cree un repositorio Git vacío o reinicialice uno existente
+
+trabajar en el cambio actual (ver también: ayuda git todos los días)
+   add          Agregar contenido del archivo al índice
+   mv           Mover o cambiar el nombre de un archivo, un directorio o un enlace simbólico
+   reset        Restablece HEAD actual al estado especificado
+   rm           Eliminar archivos del árbol de trabajo y del índice
+
+examinar la historia y el estado (ver también: revisiones de ayuda de git)
+   bisect       Use la búsqueda binaria para encontrar el commit que introdujo un error
+   grep         Imprimir líneas que coinciden con un patrón
+   log          Mostrar registros de confirmación
+   show         Mostrar varios tipos de objetos
+   status       Muestra el estado del árbol de trabajo
+
+crece, marca y modifica tu historia común
+   branch       Enumerar, crear o eliminar sucursales
+   checkout     Pagar Cambiar ramas o restaurar archivos de árbol de trabajo
+   commit       Registrar cambios en el repositorio
+   diff         Muestra los cambios entre commits, commit y árbol de trabajo, etc.
+   merge        Une dos o más historias de desarrollo juntas
+   rebase       Vuelva a aplicar los commits sobre otra punta base
+   tag          Crear, enumerar, eliminar o verificar un objeto de etiqueta firmado con GPG
+
+colaborar (ver también: flujos de trabajo de ayuda de git)
+   fetch        Descargue objetos y referencias de otro repositorio
+   pull         Obtenga e integre con otro repositorio o una sucursal local
+   push         Actualizar referencias remotas junto con objetos asociados
